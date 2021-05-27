@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png'
 
 export default function Header() {
     const headerContainerStyle = {
-        width : '100vw',
+        width : '100%',
         height: '9vh',
         background: '#313131'
     };
@@ -24,9 +24,9 @@ export default function Header() {
     };
 
     return (
-        <Navbar fixed="top" expand='md' style={headerContainerStyle} className="header px-0">
+        <Navbar style={headerContainerStyle} className="px-0">
             <Navbar.Brand
-                className="pl-5"
+                className="pl-1"
             >
                 <Row style={logoStyle}>
                     <img src={logo} alt="geofluxus"/>

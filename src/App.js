@@ -9,13 +9,13 @@ import Col from "react-bootstrap/Col"
 
 function App() {
   return (
-    <Container className="App" fluid>
+    <Container className="App m-0 p-0" fluid>
         <Header/>
-        <Row>
-          <Col>
+        <Row className="App m-0 p-0" noGutters={true}>
+          <Col md={2}>
             <Sidebar/>
           </Col>
-          <Col>
+          <Col md={10}>
             <Routes/>
           </Col>
         </Row>
