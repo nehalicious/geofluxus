@@ -21,7 +21,7 @@ export default function MenuItem(props) {
 
     return (
         <Container fluid>
-            <Row className="py-2" onClick={()=>handleClick()}>
+            <Row className="pt-3" onClick={()=>handleClick()}>
                 <Col style={{alignContents: 'right'}} md={4}>
                     <img src={props.icon} alt={props.name}/>
                 </Col>
@@ -29,6 +29,11 @@ export default function MenuItem(props) {
                     <p style={linkStyle}>{props.name}</p>
                 </Col>
             </Row>
+            <hr
+                style={{
+                    borderTop: '1px solid #828282',
+                }}
+            />
 
         </Container>
     )

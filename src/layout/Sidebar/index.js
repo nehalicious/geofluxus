@@ -14,7 +14,7 @@ export default function Sidebar() {
     };
     return (
         <Container style={sidebarStyle}>
-            <div className="pt-5">
+            <div className="pt-2">
             {menu.map(x=>
                 <MenuItem
                     name={x.name}
