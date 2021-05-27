@@ -11,10 +11,12 @@ export default function Sidebar() {
         minHeight: '100%'
     };
     return (
-        <Container style={sidebarStyle} fluid>
+        <Container style={sidebarStyle}>
+            <div className="pt-5">
             {menu.map(x=>
-                <MenuItem name={x.name}/>
+                <MenuItem name={x.name} icon={x.icon} url={x.url} id={x.id}/>
             )}
+            </div>
         </Container>
     )
 }

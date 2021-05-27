@@ -11,11 +11,11 @@ function App() {
   return (
     <Container className="App m-0 p-0" fluid>
         <Header/>
-        <Row className="App m-0 p-0" noGutters={true}>
-          <Col md={2}>
+        <Row className="App m-0 pt-2" noGutters={true}>
+          <Col md={3}>
             <Sidebar/>
           </Col>
-          <Col md={10}>
+          <Col md={9}>
             <Routes/>
           </Col>
         </Row>
