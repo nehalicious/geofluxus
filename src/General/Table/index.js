@@ -1,10 +1,18 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Entry from './Entry'
+import Entry from './Entry';
 
 export default function Table(props) {
+    useEffect(()=> {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     const rowsPerPage = 3;
     const numpages = Math.ceil(props.data.length/rowsPerPage);
 
@@ -17,6 +25,10 @@ export default function Table(props) {
         return (
             <div
                 className="numberBox mr-3"
+                style={{
+                    background: currentPage === x? '#8E8E8E': '#0F0F0F',
+                    color:currentPage === x? '#0F0F0F':  '#8E8E8E'
+                }}
                 onClick = {()=> setPage(x)}
             >
                 {x}
@@ -56,13 +68,15 @@ export default function Table(props) {
 
 
             <Row className="py-4">
-                <Col>
-                    <button>
-                        Map View
-                    </button>
+                <Col className="px-5" style={{width: '100%', textAlign: 'left'}}>
+                    {props.view === 'table'?
+                        <button onClick={()=>props.setView('map')}>
+                            Map View
+                        </button>:
+                        null}
                 </Col>
-                <Col style={{alignContent: 'right', width: '100%'}}>
-                    <Row>
+                <Col>
+                    <Row className="justify-content-end px-5">
                         {getPageNumbers()}
                     </Row>
                 </Col>

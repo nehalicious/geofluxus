@@ -9,7 +9,8 @@ export default function Entry(props) {
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
         borderRadius: '5px',
         color: '#E5E5E5',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        height: '5.8vh'
     };
 
     return (

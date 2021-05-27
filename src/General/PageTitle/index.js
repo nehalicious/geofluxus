@@ -6,9 +6,6 @@ import Form from "react-bootstrap/Form";
 import arrow from '../../assets/images/icons/arrow.png';
 
 export default function PageTitle(props) {
-    const headerContainerStyle = {
-
-    };
 
     const logoStyle = {
         color: '#7AA5A9',
@@ -22,7 +19,7 @@ export default function PageTitle(props) {
     };
 
     return (
-        <Navbar style={headerContainerStyle} className="px-0">
+        <Navbar className="px-0">
             <Navbar.Brand
                 className="pl-5"
             >
