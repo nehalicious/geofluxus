@@ -8,19 +8,19 @@ const menu = [
     {
         id: 0,
         name: "Market Demand",
-        url: "/",
+        url: "/Error",
         icon: market
     },
     {
         id: 1,
         name: "Circular Alternatives",
-        url: "/",
+        url: "/Error",
         icon: circular
     },
     {
         id: 2,
         name: "Comparison",
-        url: "/",
+        url: "/Error",
         icon: comparison
     },
     {
