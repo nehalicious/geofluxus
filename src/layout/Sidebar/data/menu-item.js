@@ -26,7 +26,7 @@ const menu = [
     {
         id: 3,
         name: "My Waste Materials",
-        url: "/Waste",
+        url: "/Reports",
         icon: waste
     },
     {
