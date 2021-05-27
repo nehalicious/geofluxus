@@ -1,7 +1,12 @@
 import React from 'react';
+import PageTitle from "../General/PageTitle";
+import Table from "../General/Table"
 
 export default function Reports() {
     return(
-        <h1> Reports</h1>
+        <>
+        <PageTitle title={"Waste Reports"}/>
+        <Table/>
+        </>
     )
 }

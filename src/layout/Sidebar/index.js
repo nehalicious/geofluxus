@@ -10,7 +10,7 @@ export default function Sidebar() {
         background: '#282828',
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
         padding: '5px',
-        minHeight: '100%'
+        minHeight: '100%',
     };
     return (
         <Container style={sidebarStyle}>
