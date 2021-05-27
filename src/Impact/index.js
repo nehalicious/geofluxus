@@ -1,7 +1,8 @@
 import React from 'react';
+import PageTitle from "../General/PageTitle";
 
 export default function Impact() {
     return (
-        <h1> Impact </h1>
+        <PageTitle title={"Impact"}/>
     )
 }

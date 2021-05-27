@@ -3,3 +3,19 @@
   background: #0F0F0F;
   min-height: 100vh;
 }
+
+button {
+  padding: 5px 20px;
+  background: #F28038;
+  border-radius: 10px;
+}
+
+.numberBox {
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color:  #8E8E8E;
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+}
